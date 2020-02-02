@@ -1,23 +1,6 @@
 import { createGlobalStyle } from 'styled-components';
-import SairaExtraCondensedBold from '../fonts/SairaExtraCondensed-Bold.ttf';
-import SairaExtraCondensedMedium from '../fonts/SairaExtraCondensed-Medium.ttf';
 
 export default createGlobalStyle`
-
-@font-face {
-    font-family: Saira Extra Condensed;
-    font-style: normal;
-    font-weight: 700;
-    src: url(${SairaExtraCondensedBold});
-}
-
-@font-face {
-    font-family: Saira Extra Condensed;
-    font-style: normal;
-    font-weight: 500;
-    src: url(${SairaExtraCondensedMedium});
-}
-
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
