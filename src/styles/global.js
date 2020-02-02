@@ -72,4 +72,10 @@ html {
     font-size: 62.5%;
     scroll-behavior: smooth;
 }
+body {
+	background: ${props => props.theme.colors.background};
+    color: ${props => props.theme.colors.text};
+    font-family: ${props => props.theme.fonts.body};
+    line-height: ${props => props.theme.lineHeights.body};
+}
 `;

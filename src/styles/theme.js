@@ -3,7 +3,8 @@ export default {
     background: '#fff',
     text: '#868e96',
     primary: '#224D1C',
-    secondary: '#343a40'
+    secondary: '#343a40',
+    muted: '#ccc'
   },
   fonts: {
     heading: 'Saira Extra Condensed, sans-serif',

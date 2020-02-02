@@ -1,6 +1,10 @@
 import styled from 'styled-components';
+import css from '@styled-system/css';
 
-export default styled.section`
-  padding: 8rem 1.6rem;
-  min-height: 100vh;
-`;
+export default styled('div')(
+  css({
+    py: '8rem',
+    px: '1.6rem',
+    minHeight: '100vh'
+  })
+);

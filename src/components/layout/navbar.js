@@ -1,34 +1,40 @@
 import React from 'react';
 import styled from 'styled-components';
+import css from '@styled-system/css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBars } from '@fortawesome/free-solid-svg-icons';
 
-const NavbarContainer = styled.div`
-  position: sticky;
-  top: 0;
-  left: 0;
-  display: flex;
-  align-items: center;
-  height: 5.6rem;
-  padding: 0 1.6rem;
-  color: white;
-  background: ${({ theme }) => theme.colors.primary};
-  width: 100%;
-`;
+const NavbarContainer = styled('nav')(
+  css({
+    position: 'sticky',
+    top: 0,
+    left: 0,
+    display: 'flex',
+    alignItems: 'center',
+    height: '5.6rem',
+    px: '1.6rem',
+    color: 'white',
+    bg: 'primary',
+    width: '100%'
+  })
+);
 
-const Name = styled.div`
-  font-family: ${({ theme }) => theme.fonts.body};
-  font-size: 2rem;
-  font-weight: 600;
-`;
+const Name = styled('div')(
+  css({
+    fontSize: '2rem',
+    fontWeight: 600
+  })
+);
 
-const NavToggleButton = styled.button`
-  margin-left: auto;
-  background: none;
-  border: none;
-  color: white;
-  font-size: 2.2rem;
-`;
+const NavToggleButton = styled('button')(
+  css({
+    ml: 'auto',
+    background: 'none',
+    border: 'none',
+    color: 'white',
+    fontSize: '2.2rem'
+  })
+);
 
 const Navbar = () => {
   return (

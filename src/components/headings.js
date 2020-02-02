@@ -1,26 +1,34 @@
-import styled, { css } from 'styled-components';
+import styled from 'styled-components';
+import css from '@styled-system/css';
 
-const heading = css`
-  font-family: ${({ theme }) => theme.fonts.heading};
-  line-height: ${({ theme }) => theme.lineHeights.heading};
-  font-weight: 700;
-`;
+const heading = {
+  fontFamily: 'heading',
+  lineHeight: 'heading',
+  fontWeight: 700
+};
 
-export const H1 = styled.h1`
-  ${heading};
-  font-size: 9.6rem;
-  color: ${({ theme }) => theme.colors.secondary};
-  line-height: 0.9;
-`;
+export const H1 = styled('h1')(
+  css({
+    ...heading,
+    fontSize: '9.6rem',
+    color: 'secondary',
+    lineHeight: 0.9,
+    textTransform: 'uppercase'
+  })
+);
 
-export const H2 = styled.h2`
-  ${heading};
-  font-size: 5.6rem;
-  color: ${({ theme }) => theme.colors.secondary};
-  text-transform: uppercase;
-`;
+export const H2 = styled('h2')(
+  css({
+    ...heading,
+    fontSize: '5.6rem',
+    color: 'secondary',
+    textTransform: 'uppercase'
+  })
+);
 
-export const H4 = styled.h4`
-  ${heading};
-  font-size: 2.4rem;
-`;
+export const H4 = styled('h4')(
+  css({
+    ...heading,
+    fontSize: '2.4rem'
+  })
+);
