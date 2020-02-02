@@ -1,10 +1,11 @@
 export default {
   colors: {
     primary: '#224D1C',
-    secondary: '#2A2A2A'
+    secondary: '#343a40'
   },
   fonts: {
-    heading: 'Montserrat, sans-serif'
+    heading: 'Saira Extra Condensed, sans-serif',
+    body: 'Muli, sans-serif'
   },
   lineHeights: {
     body: 1.5,

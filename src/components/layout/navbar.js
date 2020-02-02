@@ -17,7 +17,7 @@ const NavbarContainer = styled.div`
 `;
 
 const Name = styled.div`
-  font-family: ${({ theme }) => theme.fonts.heading};
+  font-family: ${({ theme }) => theme.fonts.body};
   font-size: 2rem;
   font-weight: 600;
 `;
