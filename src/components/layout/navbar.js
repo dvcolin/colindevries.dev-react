@@ -12,7 +12,7 @@ const NavbarContainer = styled('nav')(
     display: 'flex',
     alignItems: 'center',
     height: '5.6rem',
-    px: '1.6rem',
+    px: 2,
     color: 'white',
     bg: 'primary',
     width: '100%'

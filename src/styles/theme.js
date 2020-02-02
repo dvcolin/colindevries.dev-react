@@ -1,6 +1,6 @@
 export default {
   breakpoints: ['40em', '52em', '64em'],
-  space: [0, 4, 8, 16, 32, 64, 128, 256, 512],
+  space: [0, '0.8rem', '1.6rem', '4.8rem', '8rem'],
   fonts: {
     heading: 'Saira Extra Condensed, sans-serif',
     body: 'Muli, sans-serif'

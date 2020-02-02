@@ -29,7 +29,7 @@ const PrimaryColor = styled('span')(
 
 const Subheading = styled(H4)(
   css({
-    mt: '0.8rem',
+    mt: 1,
     fontWeight: 'medium',
     lineHeight: '1.4',
     textTransform: 'uppercase'
@@ -38,14 +38,14 @@ const Subheading = styled(H4)(
 
 const Description = styled(P)(
   css({
-    mt: '4.8rem'
+    mt: 3
   })
 );
 
 const SocialLinks = styled('div')(
   css({
     display: 'flex',
-    mt: '4.8rem'
+    mt: 3
   })
 );
 
@@ -60,7 +60,7 @@ const SocialLinkContainer = styled('a')(
     bg: 'secondary',
     color: 'background',
     borderRadius: '50%',
-    mr: '1.6rem'
+    mr: 2
   })
 );
 

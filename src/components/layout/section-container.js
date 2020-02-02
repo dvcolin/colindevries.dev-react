@@ -3,8 +3,8 @@ import css from '@styled-system/css';
 
 export default styled('div')(
   css({
-    py: '8rem',
-    px: '1.6rem',
+    py: 4,
+    px: 2,
     minHeight: '100vh'
   })
 );
