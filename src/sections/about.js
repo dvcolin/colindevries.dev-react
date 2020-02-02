@@ -1,12 +1,11 @@
 import React from 'react';
 import styled from 'styled-components';
 import SectionContainer from '../components/layout/section-container';
+import { H1, H3 } from '../components/headings';
 
-const H1 = styled.h1`
-  font-size: 5.6rem;
-  font-family: ${({ theme }) => theme.fonts.heading};
-  color: ${({ theme }) => theme.colors.primary};
-  font-weight: 700;
+const Subheading = styled(H3)`
+  margin-top: 0.8rem;
+  line-height: 1.2;
 `;
 
 const AboutSection = () => {
@@ -17,6 +16,10 @@ const AboutSection = () => {
         <br />
         de Vries
       </H1>
+      <Subheading>
+        Full Stack Web Developer &middot; Los Gatos, California &middot;
+        colin@colindevries.dev
+      </Subheading>
     </SectionContainer>
   );
 };
