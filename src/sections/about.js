@@ -1,19 +1,21 @@
 import React from 'react';
 import styled from 'styled-components';
 import SectionContainer from '../components/layout/section-container';
-import { H1, H3 } from '../components/headings';
+import { H1, H4 } from '../components/headings';
 
 const Heading = styled(H1)`
   text-transform: uppercase;
 `;
 
-const HeadingPrimary = styled.span`
+const PrimaryColor = styled.span`
   color: ${({ theme }) => theme.colors.primary};
+  font-weight: 700;
 `;
 
-const Subheading = styled(H3)`
+const Subheading = styled(H4)`
   margin-top: 0.8rem;
-  line-height: 1.2;
+  font-weight: 500;
+  line-height: 1.4;
   text-transform: uppercase;
 `;
 
@@ -23,11 +25,12 @@ const AboutSection = () => {
       <Heading>
         Colin
         <br />
-        <HeadingPrimary>de Vries</HeadingPrimary>
+        <PrimaryColor>de Vries</PrimaryColor>
       </Heading>
       <Subheading>
-        Full Stack Web Developer &middot; Los Gatos, CA &middot;
-        colin@colindevries.dev
+        22975 Santa Cruz Hwy &middot; Los Gatos, CA 95033 &middot; (408)
+        300-8903 &middot;
+        <PrimaryColor> colin@colindevries.dev</PrimaryColor>
       </Subheading>
     </SectionContainer>
   );

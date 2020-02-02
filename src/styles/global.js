@@ -1,5 +1,6 @@
 import { createGlobalStyle } from 'styled-components';
 import SairaExtraCondensedBold from '../fonts/SairaExtraCondensed-Bold.ttf';
+import SairaExtraCondensedMedium from '../fonts/SairaExtraCondensed-Medium.ttf';
 
 export default createGlobalStyle`
 
@@ -8,6 +9,13 @@ export default createGlobalStyle`
     font-style: normal;
     font-weight: 700;
     src: url(${SairaExtraCondensedBold});
+}
+
+@font-face {
+    font-family: Saira Extra Condensed;
+    font-style: normal;
+    font-weight: 500;
+    src: url(${SairaExtraCondensedMedium});
 }
 
 html, body, div, span, applet, object, iframe,
