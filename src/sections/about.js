@@ -29,7 +29,6 @@ const PrimaryColor = styled('span')(
 const Subheading = styled(H4)(
   css({
     mt: 1,
-    fontWeight: 'medium',
     lineHeight: '1.4'
   })
 );

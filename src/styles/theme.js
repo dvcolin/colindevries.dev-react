@@ -19,8 +19,12 @@ export default {
   colors: {
     text: '#868e96',
     background: '#fff',
-    primary: '#1f4519',
+    primary: '#224D1C',
     secondary: '#343a40',
-    muted: '#ccc'
+    muted: '#ccc',
+    nav: {
+      background: '#1b3e16',
+      text: '#fff'
+    }
   }
 };

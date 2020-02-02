@@ -6,7 +6,7 @@ import WebFont from 'webfontloader';
 
 WebFont.load({
   google: {
-    families: ['Saira Extra Condensed:500,700', 'Muli:400,500']
+    families: ['Saira Extra Condensed:500,700', 'Muli:400,700']
   }
 });
 

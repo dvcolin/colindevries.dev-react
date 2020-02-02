@@ -13,8 +13,8 @@ const NavbarContainer = styled('nav')(
     alignItems: 'center',
     height: '5.6rem',
     px: 2,
-    color: 'white',
-    bg: 'primary',
+    color: 'nav.text',
+    bg: 'nav.background',
     width: '100%'
   })
 );
@@ -22,7 +22,7 @@ const NavbarContainer = styled('nav')(
 const Name = styled('div')(
   css({
     fontSize: 2,
-    fontWeight: 'medium'
+    fontWeight: 'bold'
   })
 );
 
@@ -31,7 +31,7 @@ const NavToggleButton = styled('button')(
     ml: 'auto',
     background: 'none',
     border: 'none',
-    color: 'white',
+    color: 'nav.text',
     fontSize: 2
   })
 );
