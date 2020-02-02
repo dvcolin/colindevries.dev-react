@@ -13,17 +13,24 @@ import {
 } from '@fortawesome/free-brands-svg-icons';
 import SectionDivider from '../components/section-divider';
 
+const Heading = styled(H1)(
+  css({
+    lineHeight: 0.9,
+    textTransform: 'uppercase'
+  })
+);
+
 const PrimaryColor = styled('span')(
   css({
     color: 'primary',
-    fontWeight: 700
+    fontWeight: 'bold'
   })
 );
 
 const Subheading = styled(H4)(
   css({
     mt: '0.8rem',
-    fontWeight: 500,
+    fontWeight: 'medium',
     lineHeight: '1.4',
     textTransform: 'uppercase'
   })
@@ -49,7 +56,7 @@ const SocialLinkContainer = styled('a')(
     display: 'flex',
     justifyContent: 'center',
     alignItems: 'center',
-    fontSize: '2.4rem',
+    fontSize: 2,
     bg: 'secondary',
     color: 'background',
     borderRadius: '50%',
@@ -67,11 +74,11 @@ const AboutSection = () => {
   return (
     <>
       <SectionContainer>
-        <H1>
+        <Heading>
           Colin
           <br />
           <PrimaryColor>de Vries</PrimaryColor>
-        </H1>
+        </Heading>
         <Subheading>
           22975 Santa Cruz Hwy &middot; Los Gatos, CA 95033 &middot; (408)
           300-8903 &middot;

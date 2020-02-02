@@ -21,8 +21,7 @@ const NavbarContainer = styled('nav')(
 
 const Name = styled('div')(
   css({
-    fontSize: '2rem',
-    fontWeight: 600
+    fontSize: 2
   })
 );
 
@@ -32,7 +31,7 @@ const NavToggleButton = styled('button')(
     background: 'none',
     border: 'none',
     color: 'white',
-    fontSize: '2.2rem'
+    fontSize: 2
   })
 );
 
