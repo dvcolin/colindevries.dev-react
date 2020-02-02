@@ -8,7 +8,7 @@ const heading = css`
 
 export const H1 = styled.h1`
   ${heading};
-  font-size: 10rem;
+  font-size: 9.6rem;
   color: ${({ theme }) => theme.colors.secondary};
   line-height: 0.9;
 `;
@@ -16,5 +16,4 @@ export const H1 = styled.h1`
 export const H4 = styled.h4`
   ${heading};
   font-size: 2.4rem;
-  color: ${({ theme }) => theme.colors.muted};
 `;

@@ -1,8 +1,9 @@
 export default {
   colors: {
+    background: '#fafafa',
+    text: '#868e96',
     primary: '#224D1C',
-    secondary: '#343a40',
-    muted: '#868e96'
+    secondary: '#343a40'
   },
   fonts: {
     heading: 'Saira Extra Condensed, sans-serif',
