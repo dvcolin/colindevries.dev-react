@@ -9,7 +9,7 @@ const NavbarContainer = styled.div`
   left: 0;
   display: flex;
   align-items: center;
-  height: 5.2rem;
+  height: 5.6rem;
   padding: 0 1.6rem;
   color: white;
   background: ${({ theme }) => theme.colors.primary};
