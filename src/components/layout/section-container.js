@@ -1,5 +1,6 @@
 import styled from 'styled-components';
 
-export default styled.div`
-  padding: 6.4rem 0;
+export default styled.section`
+  padding: 8rem 1.6rem;
+  min-height: 100vh;
 `;

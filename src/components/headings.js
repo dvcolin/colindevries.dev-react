@@ -13,6 +13,13 @@ export const H1 = styled.h1`
   line-height: 0.9;
 `;
 
+export const H2 = styled.h2`
+  ${heading};
+  font-size: 5.6rem;
+  color: ${({ theme }) => theme.colors.secondary};
+  text-transform: uppercase;
+`;
+
 export const H4 = styled.h4`
   ${heading};
   font-size: 2.4rem;

@@ -11,17 +11,13 @@ const LayoutContainer = styled.div`
   line-height: ${({ theme }) => theme.lineHeights.body};
 `;
 
-const Main = styled.main`
-  padding: 0 1.6rem;
-`;
-
 const Layout = ({ children }) => {
   return (
     <ThemeProvider theme={theme}>
       <GlobalStyles />
       <LayoutContainer>
         <Navbar />
-        <Main>{children}</Main>
+        <main>{children}</main>
       </LayoutContainer>
     </ThemeProvider>
   );

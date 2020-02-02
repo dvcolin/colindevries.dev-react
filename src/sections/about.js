@@ -10,6 +10,7 @@ import {
   faTwitter,
   faFacebookF
 } from '@fortawesome/free-brands-svg-icons';
+import SectionDivider from '../components/section-divider';
 
 const Heading = styled(H1)`
   text-transform: uppercase;
@@ -57,32 +58,35 @@ const SocialLink = ({ href, icon }) => (
 
 const AboutSection = () => {
   return (
-    <SectionContainer>
-      <Heading>
-        Colin
-        <br />
-        <PrimaryColor>de Vries</PrimaryColor>
-      </Heading>
-      <Subheading>
-        22975 Santa Cruz Hwy &middot; Los Gatos, CA 95033 &middot; (408)
-        300-8903 &middot;
-        <PrimaryColor> colin@colindevries.dev</PrimaryColor>
-      </Subheading>
+    <>
+      <SectionContainer>
+        <Heading>
+          Colin
+          <br />
+          <PrimaryColor>de Vries</PrimaryColor>
+        </Heading>
+        <Subheading>
+          22975 Santa Cruz Hwy &middot; Los Gatos, CA 95033 &middot; (408)
+          300-8903 &middot;
+          <PrimaryColor> colin@colindevries.dev</PrimaryColor>
+        </Subheading>
 
-      <Description>
-        I am experienced in leveraging agile frameworks to provide a robust
-        synopsis for high level overviews. Iterative approaches to corporate
-        strategy foster collaborative thinking to further the overall value
-        proposition.
-      </Description>
+        <Description>
+          I am experienced in leveraging agile frameworks to provide a robust
+          synopsis for high level overviews. Iterative approaches to corporate
+          strategy foster collaborative thinking to further the overall value
+          proposition.
+        </Description>
 
-      <SocialLinks>
-        <SocialLink href='#' icon={faLinkedinIn} />
-        <SocialLink href='#' icon={faGithub} />
-        <SocialLink href='#' icon={faTwitter} />
-        <SocialLink href='#' icon={faFacebookF} />
-      </SocialLinks>
-    </SectionContainer>
+        <SocialLinks>
+          <SocialLink href='#' icon={faLinkedinIn} />
+          <SocialLink href='#' icon={faGithub} />
+          <SocialLink href='#' icon={faTwitter} />
+          <SocialLink href='#' icon={faFacebookF} />
+        </SocialLinks>
+      </SectionContainer>
+      <SectionDivider />
+    </>
   );
 };
 
