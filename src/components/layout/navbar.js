@@ -21,7 +21,8 @@ const NavbarContainer = styled('nav')(
 
 const Name = styled('div')(
   css({
-    fontSize: 2
+    fontSize: 2,
+    fontWeight: 'medium'
   })
 );
 

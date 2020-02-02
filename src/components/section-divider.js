@@ -1,10 +1,13 @@
 import styled from 'styled-components';
 import css from '@styled-system/css';
 
-export default styled('div')(
+export default styled('hr')(
   css({
     width: '100%',
+    border: 'none',
+    borderTopWidth: '1px',
     height: '1px',
-    bg: 'muted'
+    borderTopStyle: 'solid',
+    borderTopColor: 'muted'
   })
 );

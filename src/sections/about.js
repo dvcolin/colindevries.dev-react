@@ -15,8 +15,7 @@ import SectionDivider from '../components/section-divider';
 
 const Heading = styled(H1)(
   css({
-    lineHeight: 0.9,
-    textTransform: 'uppercase'
+    lineHeight: 0.9
   })
 );
 
@@ -31,8 +30,7 @@ const Subheading = styled(H4)(
   css({
     mt: 1,
     fontWeight: 'medium',
-    lineHeight: '1.4',
-    textTransform: 'uppercase'
+    lineHeight: '1.4'
   })
 );
 
