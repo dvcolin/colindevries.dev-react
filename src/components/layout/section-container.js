@@ -6,8 +6,9 @@ export default styled('div')(
     display: 'flex',
     flexDirection: 'column',
     justifyContent: [null, 'center'],
-    py: 4,
-    px: 2,
+    py: [4, null, null, 3],
+    px: [2, null, null, 3],
+    maxWidth: '120rem',
     minHeight: '100vh'
   })
 );

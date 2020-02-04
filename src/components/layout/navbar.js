@@ -6,16 +6,16 @@ import { faBars } from '@fortawesome/free-solid-svg-icons';
 
 const NavbarContainer = styled('nav')(
   css({
-    position: 'sticky',
+    position: ['sticky', null, null, 'fixed'],
     top: 0,
     left: 0,
     display: 'flex',
     alignItems: 'center',
-    height: '5.6rem',
+    height: ['5.6rem', null, null, '100vh'],
+    width: ['100%', null, null, '27.2rem'],
     px: 2,
     color: 'nav.text',
-    bg: 'nav.background',
-    width: '100%'
+    bg: 'nav.background'
   })
 );
 
