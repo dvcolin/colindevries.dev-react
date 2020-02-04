@@ -19,6 +19,12 @@ const Heading = styled(H1)(
   })
 );
 
+const Break = styled('br')(
+  css({
+    display: ['block', 'none']
+  })
+);
+
 const PrimaryColor = styled('span')(
   css({
     color: 'primary',
@@ -29,20 +35,20 @@ const PrimaryColor = styled('span')(
 const Subheading = styled(H4)(
   css({
     mt: 1,
-    lineHeight: '1.4'
+    lineHeight: '1.5',
+    mb: 3
   })
 );
 
 const Description = styled(P)(
   css({
-    mt: 3
+    mb: 3
   })
 );
 
 const SocialLinks = styled('div')(
   css({
-    display: 'flex',
-    mt: 3
+    display: 'flex'
   })
 );
 
@@ -73,8 +79,8 @@ const AboutSection = () => {
       <SectionContainer>
         <Heading>
           Colin
-          <br />
-          <PrimaryColor>de Vries</PrimaryColor>
+          <Break />
+          <PrimaryColor> de Vries</PrimaryColor>
         </Heading>
         <Subheading>
           22975 Santa Cruz Hwy &middot; Los Gatos, CA 95033 &middot; (408)

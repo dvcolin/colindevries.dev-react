@@ -9,7 +9,7 @@ const Layout = ({ children }) => {
     <ThemeProvider theme={theme}>
       <GlobalStyles />
       <Navbar />
-      {children}
+      <main>{children}</main>
     </ThemeProvider>
   );
 };

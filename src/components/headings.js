@@ -38,6 +38,7 @@ export const H4 = styled('h4')(
     ...heading,
     fontSize: 2,
     fontWeight: 'medium',
-    color: 'text'
+    color: 'text',
+    mb: 2
   })
 );
