@@ -63,7 +63,10 @@ const SocialLinkContainer = styled('a')(
     bg: 'secondary',
     color: 'background',
     borderRadius: '50%',
-    mr: 2
+    mr: 2,
+    '&:hover': {
+      bg: 'primary'
+    }
   })
 );
 

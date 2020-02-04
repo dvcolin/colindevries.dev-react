@@ -21,6 +21,7 @@ const NavbarContainer = styled('nav')(
 
 const Name = styled('div')(
   css({
+    display: ['block', null, null, 'none'],
     fontSize: '2.2rem',
     fontWeight: 'bold'
   })
@@ -28,6 +29,7 @@ const Name = styled('div')(
 
 const NavToggleButton = styled('button')(
   css({
+    display: ['block', null, null, 'none'],
     ml: 'auto',
     background: 'none',
     border: 'none',

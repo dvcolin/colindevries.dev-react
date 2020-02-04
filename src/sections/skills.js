@@ -35,7 +35,10 @@ const DevIcon = styled(FontAwesomeIcon)(
     fontSize: '4.8rem',
     color: 'text',
     mr: 2,
-    mb: 2
+    mb: 2,
+    '&:hover': {
+      color: 'primary'
+    }
   })
 );
 
