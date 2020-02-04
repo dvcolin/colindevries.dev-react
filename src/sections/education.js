@@ -8,6 +8,8 @@ import { PSmall } from '../components/text';
 
 const EducationItemContainer = styled('div')(
   css({
+    display: 'flex',
+    flexDirection: ['column', 'row'],
     mb: 3
   })
 );
@@ -21,15 +23,18 @@ const EducationItemDescription = styled(PSmall)(
 const EducationItemDate = styled(PSmall)(
   css({
     color: 'primary',
-    fontWeight: 'medium'
+    fontWeight: 'medium',
+    ml: [0, 'auto']
   })
 );
 
 const EducationItem = ({ heading, subheading, description, date }) => (
   <EducationItemContainer>
-    <H3>{heading}</H3>
-    <H4>{subheading}</H4>
-    <EducationItemDescription>{description}</EducationItemDescription>
+    <div>
+      <H3>{heading}</H3>
+      <H4>{subheading}</H4>
+      <EducationItemDescription>{description}</EducationItemDescription>
+    </div>
     <EducationItemDate>{date}</EducationItemDate>
   </EducationItemContainer>
 );
