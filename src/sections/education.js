@@ -48,7 +48,7 @@ const EducationSection = () => {
         <EducationItem
           heading='Pioneer High School'
           subheading='General Education'
-          description='GPA: 3.65'
+          description='High School Diploma'
           date='August 2012 - June 2016'
         />
       </SectionContainer>

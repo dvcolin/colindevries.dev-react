@@ -93,9 +93,9 @@ const SkillsSection = () => {
           <H4>Workflow</H4>
           <WorkflowItems>
             <WorkflowItem text='Mobile-First, Responsive Design' />
-            <WorkflowItem text='Cross Browser Testing &amp; Debugging' />
-            <WorkflowItem text='Cross Functional Teams' />
-            <WorkflowItem text='Agile Development &amp; Scrum' />
+            <WorkflowItem text='Test Driven Development &amp; Debugging' />
+            <WorkflowItem text='Consistent, Dynamic styling' />
+            <WorkflowItem text='Organized State Management' />
           </WorkflowItems>
         </div>
       </SectionContainer>

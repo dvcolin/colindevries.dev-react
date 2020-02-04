@@ -18,16 +18,17 @@ const InterestsSection = () => {
       <SectionContainer>
         <H2>Interests</H2>
         <StyledPSmall>
-          Apart from being a web developer, I enjoy most of my time being
-          outdoors. In the winter, I am an avid skier and novice ice climber.
-          During the warmer months here in Colorado, I enjoy mountain biking,
-          free climbing, and kayaking.
+          Apart from being a web developer, I enjoy listening to, mixing, and
+          producing electronic music. I love putting on a great playlist while I
+          sit down and code. In addition, I really enjoy going for walks,
+          exploring new areas, playing tennis, and weight lifting.
         </StyledPSmall>
         <PSmall>
-          When forced indoors, I follow a number of sci-fi and fantasy genre
-          movies and television shows, I am an aspiring chef, and I spend a
-          large amount of my free time exploring the latest technology
-          advancements in the front-end web development world.
+          I also really love watching stand up comedy and going to comedy clubs
+          to see my favorite comedians in person. I'm curious about many things
+          so I like to explore new things on the internet and YouTube. The
+          internet provides an endless amount of interesting finds and
+          entertainment.
         </PSmall>
       </SectionContainer>
       <SectionDivider />

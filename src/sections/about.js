@@ -90,9 +90,9 @@ const AboutSection = () => {
 
         <Description>
           I am experienced in developing full-stack web applications, primarily
-          using React and NodeJs. I'm currently attending Lambda School and will
-          be graduating in March. Currently looking for opportunities in
-          front-end development roles.
+          using React and NodeJS. I'm currently attending Lambda School and will
+          be graduating in early March 2020. Currently looking for opportunities
+          in front-end development roles.
         </Description>
 
         <SocialLinks>

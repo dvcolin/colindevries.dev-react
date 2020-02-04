@@ -43,8 +43,8 @@ const LatestWorkSection = () => {
       <WorkItem
         heading='soundsave'
         subheading='React / NodeJS / Express'
-        description='Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque nec magna at urna mattis tincidunt. Vivamus accumsan justo at dolor efficitur ornare. Ut ornare sem ac arcu mattis porttitor. Praesent ex justo, ultrices sed ligula non, varius egestas metus.'
-        url='https://github.com/dvcolin/soundsave-frontend'
+        description='Soundsave is a web application designed to connect electronic music artists with electronic music fans. Artists can share their latest tracks, allowing users to download them for free. This provides a way for up and coming artists to mix, remix, and promote their favorite music to a much wider audience.'
+        url='https://mixdown.netlify.com/'
       />
     </SectionContainer>
   );
