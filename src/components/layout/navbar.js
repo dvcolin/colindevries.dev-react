@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import styled from 'styled-components';
 import css from '@styled-system/css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
@@ -64,25 +64,35 @@ const NavLinks = styled('div')(
   })
 );
 
-const NavLink = styled('a')(
-  css({
-    fontSize: 0,
-    color: 'nav.link',
-    textDecoration: 'none',
-    textTransform: 'uppercase',
-    fontWeight: 800,
-    letterSpacing: '0.08rem',
-    py: 1,
-    '&:hover': {
-      color: 'nav.linkHover'
-    },
-    '&:active': {
-      color: 'nav.linkActive'
-    }
-  })
-);
+const NavLink = styled.a`
+  font-size: ${({ theme }) => theme.fontSizes[0]};
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: 800;
+  letter-spacing: 0.08rem;
+  padding: ${({ theme }) => theme.space[1]};
+  color: ${props =>
+    props.active
+      ? ({ theme }) => theme.colors.nav.linkActive
+      : ({ theme }) => theme.colors.nav.link};
+  transition: all 75ms ease-out;
+  &:hover {
+    color: ${props =>
+      props.active
+        ? ({ theme }) => theme.colors.nav.linkActive
+        : ({ theme }) => theme.colors.nav.linkHover};
+    cursor: pointer;
+  }
+`;
 
 const Navbar = () => {
+  const [activeLink, setActiveLink] = useState('about');
+
+  const scrollToSection = id => {
+    setActiveLink(id);
+    const section = document.getElementById(id);
+    section.scrollIntoView(true);
+  };
   return (
     <NavbarContainer>
       <Name>Colin de Vries</Name>
@@ -91,12 +101,48 @@ const Navbar = () => {
       </NavToggleButton>
       <Image src={image} />
       <NavLinks>
-        <NavLink href='#about'>About</NavLink>
-        <NavLink href='#experience'>Experience</NavLink>
-        <NavLink href='#education'>Education</NavLink>
-        <NavLink href='#skills'>Skills</NavLink>
-        <NavLink href='#interests'>Interests</NavLink>
-        <NavLink href='#projects'>Projects</NavLink>
+        <NavLink
+          section_id='about'
+          onClick={() => scrollToSection('about')}
+          active={activeLink === 'about'}
+        >
+          About
+        </NavLink>
+        <NavLink
+          section_id='experience'
+          onClick={() => scrollToSection('experience')}
+          active={activeLink === 'experience'}
+        >
+          Experience
+        </NavLink>
+        <NavLink
+          section_id='education'
+          onClick={() => scrollToSection('education')}
+          active={activeLink === 'education'}
+        >
+          Education
+        </NavLink>
+        <NavLink
+          section_id='skills'
+          onClick={() => scrollToSection('skills')}
+          active={activeLink === 'skills'}
+        >
+          Skills
+        </NavLink>
+        <NavLink
+          section_id='interests'
+          onClick={() => scrollToSection('interests')}
+          active={activeLink === 'interests'}
+        >
+          Interests
+        </NavLink>
+        <NavLink
+          section_id='projects'
+          onClick={() => scrollToSection('projects')}
+          active={activeLink === 'projects'}
+        >
+          Projects
+        </NavLink>
       </NavLinks>
     </NavbarContainer>
   );
