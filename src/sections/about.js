@@ -28,6 +28,7 @@ const PrimaryColor = styled('span')(
 
 const Subheading = styled(H4)(
   css({
+    mt: [1, null, null, 0],
     mb: 3
   })
 );

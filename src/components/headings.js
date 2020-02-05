@@ -38,11 +38,10 @@ export const H3 = styled('h3')(
 export const H4 = styled('h4')(
   css({
     ...heading,
-    fontSize: [1, null, null, 2],
+    fontSize: ['2rem', null, null, 2],
     fontWeight: 600,
     lineHeight: 1.5,
     color: 'text',
-    mb: 2,
-    mt: [1, null, null, 0]
+    mb: 2
   })
 );
