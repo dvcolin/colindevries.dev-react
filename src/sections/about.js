@@ -83,10 +83,12 @@ const AboutSection = ({ setVisibleSection }) => {
           <PrimaryColor> colin@colindevries.dev</PrimaryColor>
         </Subheading>
         <Description>
-          I am experienced in developing full-stack web applications, primarily
-          using React and NodeJS. I'm currently attending Lambda School and will
-          be graduating in early March 2020. Currently looking for opportunities
-          in front-end development roles.
+          Bacon ipsum dolor amet rump laboris consectetur short ribs, qui
+          porchetta frankfurter jowl. Dolore ex meatloaf, pastrami dolor ut cow
+          culpa strip steak pancetta et laboris turkey beef ribs. Aute flank
+          laboris nisi cow ad porchetta pariatur eu. Burgdoggen buffalo ham
+          irure commodo tenderloin pastrami ea jerky ex capicola fatback dolor
+          pork chop.
         </Description>
 
         <SocialLinks>
