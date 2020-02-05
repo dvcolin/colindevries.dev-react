@@ -23,7 +23,6 @@ const EducationItemDescription = styled(PSmall)(
 const EducationItemDate = styled(PSmall)(
   css({
     color: 'primary',
-    fontWeight: 'medium',
     ml: [0, 'auto']
   })
 );

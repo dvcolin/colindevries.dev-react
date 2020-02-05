@@ -13,12 +13,6 @@ import {
 } from '@fortawesome/free-brands-svg-icons';
 import SectionDivider from '../components/section-divider';
 
-const Heading = styled(H1)(
-  css({
-    lineHeight: 0.9
-  })
-);
-
 const Break = styled('br')(
   css({
     display: ['block', 'none']
@@ -34,8 +28,6 @@ const PrimaryColor = styled('span')(
 
 const Subheading = styled(H4)(
   css({
-    mt: 1,
-    lineHeight: '1.4',
     mb: 3
   })
 );
@@ -80,11 +72,11 @@ const AboutSection = () => {
   return (
     <>
       <SectionContainer id='about'>
-        <Heading>
+        <H1>
           Colin
           <Break />
           <PrimaryColor> de Vries</PrimaryColor>
-        </Heading>
+        </H1>
         <Subheading>
           22975 Santa Cruz Hwy &middot; Los Gatos, CA 95033 &middot; (408)
           300-8903 &middot;

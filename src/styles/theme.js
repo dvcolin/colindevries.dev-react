@@ -13,15 +13,13 @@ export default {
     medium: 500
   },
   lineHeights: {
-    body: 1.5,
-    heading: 1.2
+    body: 1.5
   },
   colors: {
     text: '#868e96',
     background: '#fff',
     primary: '#38639b',
     secondary: '#343a40',
-    muted: '#ccc',
     nav: {
       link: 'rgba(255, 255, 255, .5)',
       linkHover: 'rgba(255, 255, 255, .75)',

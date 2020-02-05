@@ -3,11 +3,13 @@ import css from '@styled-system/css';
 
 export default styled('hr')(
   css({
-    width: '100%',
-    border: 'none',
+    boxSizing: 'content-box',
+    height: 0,
+    overflow: 'visible',
+    border: 0,
     borderTopWidth: '1px',
-    height: '1px',
     borderTopStyle: 'solid',
-    borderTopColor: 'muted'
+    borderTopColor: 'rgba(0, 0, 0, 0.1)',
+    m: 0
   })
 );
