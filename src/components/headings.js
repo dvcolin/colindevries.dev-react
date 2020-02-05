@@ -39,7 +39,7 @@ export const H4 = styled('h4')(
   css({
     ...heading,
     fontSize: 2,
-    fontWeight: 'medium',
+    fontWeight: 600,
     lineHeight: 1.5,
     color: 'text',
     mb: 2

@@ -2,10 +2,10 @@ export default {
   breakpoints: ['40em', '52em', '64em'],
   space: [0, '0.8rem', '1.6rem', '4.8rem', '8rem'],
   fonts: {
-    heading: 'Saira Extra Condensed, sans-serif',
-    body: 'Muli, sans-serif'
+    heading: 'Barlow Condensed, sans-serif',
+    body: 'Barlow, sans-serif'
   },
-  fontSizes: ['1.6rem', '1.8rem', '2.4rem', '3.2rem', '5.6rem', '9.6rem'],
+  fontSizes: ['1.8rem', '2rem', '2.4rem', '3.2rem', '5.6rem', '9.2rem'],
   fontWeights: {
     body: 400,
     heading: 700,
@@ -16,7 +16,7 @@ export default {
     body: 1.5
   },
   colors: {
-    text: '#868e96',
+    text: '#5a5e61',
     background: '#fff',
     primary: '#1C7C54',
     secondary: '#343a40',

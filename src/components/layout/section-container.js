@@ -26,7 +26,7 @@ export default ({ children, setVisibleSection, id }) => {
     <VisibilitySensor
       onChange={sectionChange}
       partialVisibility={true}
-      offset={{ top: 400, bottom: 400 }}
+      offset={{ top: 440, bottom: 440 }}
     >
       <SectionContainer id={id}>{children}</SectionContainer>
     </VisibilitySensor>

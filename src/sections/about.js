@@ -78,11 +78,10 @@ const AboutSection = ({ setVisibleSection }) => {
           <PrimaryColor> de Vries</PrimaryColor>
         </H1>
         <Subheading>
-          22975 Santa Cruz Hwy &middot; Los Gatos, CA 95033 &middot; (408)
+          Full Stack Software Developer &middot; Los Gatos, CA &middot; (408)
           300-8903 &middot;
           <PrimaryColor> colin@colindevries.dev</PrimaryColor>
         </Subheading>
-
         <Description>
           I am experienced in developing full-stack web applications, primarily
           using React and NodeJS. I'm currently attending Lambda School and will

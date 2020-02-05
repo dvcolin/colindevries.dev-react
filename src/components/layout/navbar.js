@@ -65,11 +65,11 @@ const NavLinks = styled('div')(
 );
 
 const NavLink = styled.a`
-  font-size: ${({ theme }) => theme.fontSizes[0]};
+  font-size: ${({ theme }) => theme.fontSizes[1]};
   text-decoration: none;
   text-transform: uppercase;
   font-weight: 800;
-  letter-spacing: 0.08rem;
+  letter-spacing: 0.06rem;
   padding: ${({ theme }) => theme.space[1]};
   color: ${props =>
     props.active
