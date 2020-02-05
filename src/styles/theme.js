@@ -5,7 +5,7 @@ export default {
     heading: 'Barlow Condensed, sans-serif',
     body: 'Barlow, sans-serif'
   },
-  fontSizes: ['1.8rem', '2rem', '2.4rem', '3.2rem', '5.6rem', '9.2rem'],
+  fontSizes: ['1.6rem', '2rem', '2.4rem', '3.2rem', '5.6rem', '9.2rem'],
   fontWeights: {
     body: 400,
     heading: 700,

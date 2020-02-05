@@ -78,7 +78,7 @@ const AboutSection = ({ setVisibleSection }) => {
           <PrimaryColor> de Vries</PrimaryColor>
         </H1>
         <Subheading>
-          Full Stack Software Developer &middot; Los Gatos, CA &middot; (408)
+          Full Stack Web Developer &middot; Los Gatos, CA &middot; (408)
           300-8903 &middot;
           <PrimaryColor> colin@colindevries.dev</PrimaryColor>
         </Subheading>
