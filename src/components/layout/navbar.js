@@ -18,7 +18,7 @@ const NavbarContainer = styled('nav')(
     width: ['100%', null, null, '27.2rem'],
     px: 2,
     color: 'nav.linkActive',
-    bg: 'nav.background'
+    bg: 'primary'
   })
 );
 
@@ -41,18 +41,17 @@ const NavToggleButton = styled('button')(
   })
 );
 
-const Image = styled('div')(
+const Image = styled('img')(
   css({
     display: ['none', null, null, 'block'],
-    backgroundImage: `url(${image})`,
-    backgroundSize: 'cover',
-    backgroundPosition: 'center',
     borderRadius: '50%',
     height: '16rem',
     width: '16rem',
     borderWidth: '0.8rem',
     borderStyle: 'solid',
-    borderColor: 'primary'
+    borderColor: 'rgba(255,255,255,.2)',
+    objectFit: 'cover',
+    objectPosition: 'center'
   })
 );
 
@@ -90,7 +89,7 @@ const Navbar = () => {
       <NavToggleButton>
         <FontAwesomeIcon icon={faBars} />
       </NavToggleButton>
-      <Image />
+      <Image src={image} />
       <NavLinks>
         <NavLink href='#about'>About</NavLink>
         <NavLink href='#experience'>Experience</NavLink>

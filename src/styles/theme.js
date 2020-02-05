@@ -19,11 +19,10 @@ export default {
   colors: {
     text: '#868e96',
     background: '#fff',
-    primary: '#224D1C',
+    primary: '#38639b',
     secondary: '#343a40',
     muted: '#ccc',
     nav: {
-      background: '#1b3e16',
       link: 'rgba(255, 255, 255, .5)',
       linkHover: 'rgba(255, 255, 255, .75)',
       linkActive: '#fff'
