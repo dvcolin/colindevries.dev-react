@@ -93,9 +93,12 @@ const AboutSection = ({ setVisibleSection }) => {
         </Description>
 
         <SocialLinks>
-          <SocialLink href='#' icon={faLinkedinIn} />
-          <SocialLink href='#' icon={faGithub} />
-          <SocialLink href='#' icon={faTwitter} />
+          <SocialLink
+            href='https://www.linkedin.com/in/dvcolin/'
+            icon={faLinkedinIn}
+          />
+          <SocialLink href='https://github.com/dvcolin' icon={faGithub} />
+          <SocialLink href='https://twitter.com/dv_divs' icon={faTwitter} />
           <SocialLink href='#' icon={faFacebookF} />
         </SocialLinks>
       </SectionContainer>
