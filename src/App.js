@@ -15,10 +15,7 @@ const App = () => {
       <Helmet>
         <title>Colin de Vries | Full Stack Web Developer</title>
       </Helmet>
-      <Layout
-        visibleSection={visibleSection}
-        setVisibleSection={setVisibleSection}
-      >
+      <Layout visibleSection={visibleSection}>
         <AboutSection setVisibleSection={setVisibleSection} />
         <ExperienceSection setVisibleSection={setVisibleSection} />
         <EducationSection setVisibleSection={setVisibleSection} />

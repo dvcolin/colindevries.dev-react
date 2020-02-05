@@ -19,7 +19,7 @@ const ProjectDescription = styled(PSmall)(
 
 const ProjectUrl = styled('a')(
   css({
-    fontSize: 0,
+    fontSize: '1.6rem',
     color: 'primary',
     fontWeight: 'medium'
   })

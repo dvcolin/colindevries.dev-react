@@ -3,12 +3,12 @@ import css from '@styled-system/css';
 
 export const P = styled('p')(
   css({
-    fontSize: 1
+    fontSize: '1.8rem'
   })
 );
 
 export const PSmall = styled('p')(
   css({
-    fontSize: 0
+    fontSize: '1.6rem'
   })
 );

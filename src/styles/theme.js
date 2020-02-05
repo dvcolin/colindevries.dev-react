@@ -5,16 +5,6 @@ export default {
     heading: 'Barlow Condensed, sans-serif',
     body: 'Roboto, sans-serif'
   },
-  fontSizes: ['1.6rem', '1.8rem', '2.4rem', '3.2rem', '5.6rem', '9.2rem'],
-  fontWeights: {
-    body: 400,
-    heading: 700,
-    bold: 700,
-    medium: 500
-  },
-  lineHeights: {
-    body: 1.5
-  },
   colors: {
     text: '#868e96',
     background: '#fff',

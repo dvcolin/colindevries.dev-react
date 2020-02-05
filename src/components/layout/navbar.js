@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import styled from 'styled-components';
 import css from '@styled-system/css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
@@ -37,7 +37,10 @@ const NavToggleButton = styled('button')(
     background: 'none',
     border: 'none',
     color: 'nav.linkActive',
-    fontSize: '2.2rem'
+    fontSize: '2.2rem',
+    '&:focus': {
+      outline: 'none'
+    }
   })
 );
 
@@ -55,21 +58,40 @@ const Image = styled('img')(
   })
 );
 
-const NavLinks = styled('div')(
-  css({
-    display: ['none', null, null, 'flex'],
-    flexDirection: 'column',
-    alignItems: 'center',
-    mt: 2
-  })
-);
+// const NavLinks = styled('div')(
+//   css({
+//     width: '100%',
+//     display: ['none', null, null, 'flex'],
+//     flexDirection: 'column',
+//     mt: 2
+//   })
+// );
+
+const NavLinks = styled.div`
+  position: fixed;
+  top: 5.6rem;
+  left: 0;
+  width: 100%;
+  display: ${props => (props.visible ? 'flex' : 'none')};
+  flex-direction: column;
+
+  @media (min-width: ${({ theme }) => theme.breakpoints[2]}) {
+    position: relative;
+    top: 0;
+    display: flex;
+    margin-top: ${({ theme }) => theme.space[2]};
+  }
+`;
 
 const NavLink = styled.a`
-  font-size: ${({ theme }) => theme.fontSizes[1]};
+  width: 100%;
+  font-size: 1.8rem;
   text-decoration: none;
   text-transform: uppercase;
+  text-align: center;
   font-weight: 800;
   letter-spacing: 0.06rem;
+  background: ${({ theme }) => theme.colors.primary};
   padding: ${({ theme }) => theme.space[1]};
   color: ${props =>
     props.active
@@ -90,14 +112,17 @@ const Navbar = ({ visibleSection }) => {
     const section = document.getElementById(id);
     section.scrollIntoView(true);
   };
+
+  const [navVisible, setNavVisible] = useState(false);
+
   return (
     <NavbarContainer>
       <Name>Colin de Vries</Name>
-      <NavToggleButton>
+      <NavToggleButton onClick={() => setNavVisible(!navVisible)}>
         <FontAwesomeIcon icon={faBars} />
       </NavToggleButton>
       <Image src={image} />
-      <NavLinks>
+      <NavLinks visible={navVisible}>
         <NavLink
           section_id='about'
           onClick={() => scrollToSection('about')}

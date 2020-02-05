@@ -54,7 +54,7 @@ const WorkflowItemContainer = styled('div')(
   css({
     display: 'flex',
     alignItems: 'center',
-    fontSize: 0
+    fontSize: '1.6rem'
   })
 );
 

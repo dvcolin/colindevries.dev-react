@@ -22,7 +22,7 @@ const Break = styled('br')(
 const PrimaryColor = styled('span')(
   css({
     color: 'primary',
-    fontWeight: 'bold'
+    fontWeight: 700
   })
 );
 
@@ -52,7 +52,7 @@ const SocialLinkContainer = styled('a')(
     display: 'flex',
     justifyContent: 'center',
     alignItems: 'center',
-    fontSize: 2,
+    fontSize: '2.4rem',
     bg: 'button',
     color: 'background',
     borderRadius: '50%',
