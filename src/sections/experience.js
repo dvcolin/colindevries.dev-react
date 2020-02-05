@@ -7,7 +7,7 @@ import SectionDivider from '../components/section-divider';
 const ExperienceSection = () => {
   return (
     <>
-      <SectionContainer>
+      <SectionContainer id='experience'>
         <H2>Experience</H2>
         <PSmall>
           Although I have no formal work experience in web development roles, I

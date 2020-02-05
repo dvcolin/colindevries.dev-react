@@ -15,7 +15,7 @@ const StyledPSmall = styled(PSmall)(
 const InterestsSection = () => {
   return (
     <>
-      <SectionContainer>
+      <SectionContainer id='interests'>
         <H2>Interests</H2>
         <StyledPSmall>
           Apart from being a web developer, I enjoy listening to, mixing, and

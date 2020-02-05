@@ -74,7 +74,7 @@ const WorkflowItem = ({ text }) => (
 const SkillsSection = () => {
   return (
     <>
-      <SectionContainer>
+      <SectionContainer id='skills'>
         <H2>Skills</H2>
         <div>
           <H4>Programming Languages &amp; Tools</H4>

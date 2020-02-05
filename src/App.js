@@ -5,7 +5,7 @@ import ExperienceSection from './sections/experience';
 import EducationSection from './sections/education';
 import SkillsSection from './sections/skills';
 import InterestsSection from './sections/interests';
-import LatestWorkSection from './sections/latest-work';
+import ProjectsSection from './sections/projects';
 
 const App = () => {
   return (
@@ -15,7 +15,7 @@ const App = () => {
       <EducationSection />
       <SkillsSection />
       <InterestsSection />
-      <LatestWorkSection />
+      <ProjectsSection />
     </Layout>
   );
 };

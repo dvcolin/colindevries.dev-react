@@ -42,7 +42,7 @@ const EducationItem = ({ heading, subheading, description, date }) => (
 const EducationSection = () => {
   return (
     <>
-      <SectionContainer>
+      <SectionContainer id='education'>
         <H2>Education</H2>
         <EducationItem
           heading='Lambda School'

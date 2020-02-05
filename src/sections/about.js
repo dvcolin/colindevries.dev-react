@@ -79,7 +79,7 @@ const SocialLink = ({ href, icon }) => (
 const AboutSection = () => {
   return (
     <>
-      <SectionContainer>
+      <SectionContainer id='about'>
         <Heading>
           Colin
           <Break />

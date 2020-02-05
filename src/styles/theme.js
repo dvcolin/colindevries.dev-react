@@ -24,7 +24,9 @@ export default {
     muted: '#ccc',
     nav: {
       background: '#1b3e16',
-      text: '#fff'
+      link: 'rgba(255, 255, 255, .5)',
+      linkHover: 'rgba(255, 255, 255, .75)',
+      linkActive: '#fff'
     }
   }
 };
