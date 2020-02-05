@@ -36,9 +36,9 @@ const Project = ({ heading, subheading, description, url }) => (
   </ProjectContainer>
 );
 
-const ProjectsSection = () => {
+const ProjectsSection = ({ setVisibleSection }) => {
   return (
-    <SectionContainer id='projects'>
+    <SectionContainer id='projects' setVisibleSection={setVisibleSection}>
       <H2>Projects</H2>
       <Project
         heading='soundsave'

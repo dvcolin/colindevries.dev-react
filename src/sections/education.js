@@ -38,10 +38,10 @@ const EducationItem = ({ heading, subheading, description, date }) => (
   </EducationItemContainer>
 );
 
-const EducationSection = () => {
+const EducationSection = ({ setVisibleSection }) => {
   return (
     <>
-      <SectionContainer id='education'>
+      <SectionContainer id='education' setVisibleSection={setVisibleSection}>
         <H2>Education</H2>
         <EducationItem
           heading='Lambda School'

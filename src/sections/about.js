@@ -68,10 +68,10 @@ const SocialLink = ({ href, icon }) => (
   </SocialLinkContainer>
 );
 
-const AboutSection = () => {
+const AboutSection = ({ setVisibleSection }) => {
   return (
     <>
-      <SectionContainer id='about'>
+      <SectionContainer id='about' setVisibleSection={setVisibleSection}>
         <H1>
           Colin
           <Break />

@@ -1,7 +1,9 @@
+import React from 'react';
 import styled from 'styled-components';
 import css from '@styled-system/css';
+import VisibilitySensor from 'react-visibility-sensor';
 
-export default styled('div')(
+const SectionContainer = styled('div')(
   css({
     display: 'flex',
     flexDirection: 'column',
@@ -12,3 +14,21 @@ export default styled('div')(
     minHeight: '100vh'
   })
 );
+
+export default ({ children, setVisibleSection, id }) => {
+  const sectionChange = isVisible => {
+    if (isVisible) {
+      setVisibleSection(id);
+    }
+  };
+
+  return (
+    <VisibilitySensor
+      onChange={sectionChange}
+      partialVisibility={true}
+      offset={{ top: 400, bottom: 400 }}
+    >
+      <SectionContainer id={id}>{children}</SectionContainer>
+    </VisibilitySensor>
+  );
+};

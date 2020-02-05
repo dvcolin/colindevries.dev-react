@@ -71,10 +71,10 @@ const WorkflowItem = ({ text }) => (
   </WorkflowItemContainer>
 );
 
-const SkillsSection = () => {
+const SkillsSection = ({ setVisibleSection }) => {
   return (
     <>
-      <SectionContainer id='skills'>
+      <SectionContainer id='skills' setVisibleSection={setVisibleSection}>
         <H2>Skills</H2>
         <div>
           <H4>Programming Languages &amp; Tools</H4>

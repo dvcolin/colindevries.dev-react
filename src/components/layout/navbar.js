@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import styled from 'styled-components';
 import css from '@styled-system/css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
@@ -75,7 +75,7 @@ const NavLink = styled.a`
     props.active
       ? ({ theme }) => theme.colors.nav.linkActive
       : ({ theme }) => theme.colors.nav.link};
-  transition: all 75ms ease-out;
+  transition: all 100ms ease-out;
   &:hover {
     color: ${props =>
       props.active
@@ -85,11 +85,8 @@ const NavLink = styled.a`
   }
 `;
 
-const Navbar = () => {
-  const [activeLink, setActiveLink] = useState('about');
-
+const Navbar = ({ visibleSection }) => {
   const scrollToSection = id => {
-    setActiveLink(id);
     const section = document.getElementById(id);
     section.scrollIntoView(true);
   };
@@ -104,42 +101,42 @@ const Navbar = () => {
         <NavLink
           section_id='about'
           onClick={() => scrollToSection('about')}
-          active={activeLink === 'about'}
+          active={visibleSection === 'about'}
         >
           About
         </NavLink>
         <NavLink
           section_id='experience'
           onClick={() => scrollToSection('experience')}
-          active={activeLink === 'experience'}
+          active={visibleSection === 'experience'}
         >
           Experience
         </NavLink>
         <NavLink
           section_id='education'
           onClick={() => scrollToSection('education')}
-          active={activeLink === 'education'}
+          active={visibleSection === 'education'}
         >
           Education
         </NavLink>
         <NavLink
           section_id='skills'
           onClick={() => scrollToSection('skills')}
-          active={activeLink === 'skills'}
+          active={visibleSection === 'skills'}
         >
           Skills
         </NavLink>
         <NavLink
           section_id='interests'
           onClick={() => scrollToSection('interests')}
-          active={activeLink === 'interests'}
+          active={visibleSection === 'interests'}
         >
           Interests
         </NavLink>
         <NavLink
           section_id='projects'
           onClick={() => scrollToSection('projects')}
-          active={activeLink === 'projects'}
+          active={visibleSection === 'projects'}
         >
           Projects
         </NavLink>

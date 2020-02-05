@@ -4,10 +4,10 @@ import { H2 } from '../components/headings';
 import { PSmall } from '../components/text';
 import SectionDivider from '../components/section-divider';
 
-const ExperienceSection = () => {
+const ExperienceSection = ({ setVisibleSection }) => {
   return (
     <>
-      <SectionContainer id='experience'>
+      <SectionContainer id='experience' setVisibleSection={setVisibleSection}>
         <H2>Experience</H2>
         <PSmall>
           Although I have no formal work experience in web development roles, I

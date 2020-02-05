@@ -12,10 +12,10 @@ const StyledPSmall = styled(PSmall)(
   })
 );
 
-const InterestsSection = () => {
+const InterestsSection = ({ setVisibleSection }) => {
   return (
     <>
-      <SectionContainer id='interests'>
+      <SectionContainer id='interests' setVisibleSection={setVisibleSection}>
         <H2>Interests</H2>
         <StyledPSmall>
           Apart from being a web developer, I enjoy listening to, mixing, and
