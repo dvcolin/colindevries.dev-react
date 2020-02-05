@@ -18,8 +18,9 @@ export default {
   colors: {
     text: '#868e96',
     background: '#fff',
-    primary: '#38639b',
+    primary: '#1C7C54',
     secondary: '#343a40',
+    button: '#495057',
     nav: {
       link: 'rgba(255, 255, 255, .5)',
       linkHover: 'rgba(255, 255, 255, .75)',
