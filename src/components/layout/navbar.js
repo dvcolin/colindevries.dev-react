@@ -104,12 +104,13 @@ const NavLink = styled('a')(
 );
 
 const Navbar = ({ visibleSection }) => {
+  const [navVisible, setNavVisible] = useState(false);
+
   const scrollToSection = id => {
     const section = document.getElementById(id);
     section.scrollIntoView(true);
+    setNavVisible(!navVisible);
   };
-
-  const [navVisible, setNavVisible] = useState(false);
 
   return (
     <NavbarContainer>
