@@ -58,54 +58,50 @@ const Image = styled('img')(
   })
 );
 
-// const NavLinks = styled('div')(
-//   css({
-//     width: '100%',
-//     display: ['none', null, null, 'flex'],
-//     flexDirection: 'column',
-//     mt: 2
-//   })
-// );
+const NavLinks = styled('div')(
+  css({
+    position: ['fixed', null, null, 'relative'],
+    top: ['5.6rem', null, null, 0],
+    left: 0,
+    width: '100%',
+    display: ['none', null, null, 'flex'],
+    flexDirection: 'column',
+    mt: [0, null, null, 2]
+  }),
+  props => ({
+    display: `${props.visible ? 'flex' : null}`
+  })
+);
 
-const NavLinks = styled.div`
-  position: fixed;
-  top: 5.6rem;
-  left: 0;
-  width: 100%;
-  display: ${props => (props.visible ? 'flex' : 'none')};
-  flex-direction: column;
-
-  @media (min-width: ${({ theme }) => theme.breakpoints[2]}) {
-    position: relative;
-    top: 0;
-    display: flex;
-    margin-top: ${({ theme }) => theme.space[2]};
-  }
-`;
-
-const NavLink = styled.a`
-  width: 100%;
-  font-size: 1.8rem;
-  text-decoration: none;
-  text-transform: uppercase;
-  text-align: center;
-  font-weight: 800;
-  letter-spacing: 0.06rem;
-  background: ${({ theme }) => theme.colors.primary};
-  padding: ${({ theme }) => theme.space[1]};
-  color: ${props =>
-    props.active
-      ? ({ theme }) => theme.colors.nav.linkActive
-      : ({ theme }) => theme.colors.nav.link};
-  transition: all 100ms ease-out;
-  &:hover {
-    color: ${props =>
+const NavLink = styled('a')(
+  css({
+    width: '100%',
+    fontSize: '1.8rem',
+    textDecoration: 'none',
+    textTransform: 'uppercase',
+    textAlign: 'center',
+    fontWeight: 800,
+    letterSpacing: '.06rem',
+    bg: 'primary',
+    py: 1,
+    transition: 'all 100ms ease-out'
+  }),
+  props => ({
+    color: `${
       props.active
-        ? ({ theme }) => theme.colors.nav.linkActive
-        : ({ theme }) => theme.colors.nav.linkHover};
-    cursor: pointer;
-  }
-`;
+        ? props.theme.colors.nav.linkActive
+        : props.theme.colors.nav.link
+    }`,
+    '&:hover': {
+      color: `${
+        props.active
+          ? props.theme.colors.nav.linkActive
+          : props.theme.colors.nav.linkHover
+      }`,
+      cursor: 'pointer'
+    }
+  })
+);
 
 const Navbar = ({ visibleSection }) => {
   const scrollToSection = id => {
