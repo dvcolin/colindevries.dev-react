@@ -8,9 +8,9 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {
   faLinkedinIn,
   faGithub,
-  faTwitter,
-  faFacebookF
+  faTwitter
 } from '@fortawesome/free-brands-svg-icons';
+import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
 import SectionDivider from '../components/section-divider';
 
 const Break = styled('br')(
@@ -99,7 +99,7 @@ const AboutSection = ({ setVisibleSection }) => {
           />
           <SocialLink href='https://github.com/dvcolin' icon={faGithub} />
           <SocialLink href='https://twitter.com/dv_divs' icon={faTwitter} />
-          <SocialLink href='#' icon={faFacebookF} />
+          <SocialLink href='mailto:colin@colindevries.dev' icon={faEnvelope} />
         </SocialLinks>
       </SectionContainer>
       <SectionDivider />
