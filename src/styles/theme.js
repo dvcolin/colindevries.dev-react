@@ -5,6 +5,16 @@ export default {
     heading: 'Barlow Condensed, sans-serif',
     body: 'Roboto, sans-serif'
   },
+  fontSizes: [
+    '1.6rem',
+    '1.8rem',
+    '2rem',
+    '2.2rem',
+    '2.4rem',
+    '3.2rem',
+    '5.6rem',
+    '9.2rem'
+  ],
   colors: {
     text: '#868e96',
     background: '#fff',

@@ -25,8 +25,8 @@ const NavbarContainer = styled('nav')(
 const Name = styled('div')(
   css({
     display: ['block', null, null, 'none'],
-    fontSize: '2.2rem',
-    fontWeight: 'bold'
+    fontSize: 3,
+    fontWeight: 700
   })
 );
 
@@ -37,7 +37,7 @@ const NavToggleButton = styled('button')(
     background: 'none',
     border: 'none',
     color: 'nav.linkActive',
-    fontSize: '2.2rem',
+    fontSize: 3,
     '&:focus': {
       outline: 'none'
     }
@@ -76,7 +76,7 @@ const NavLinks = styled('div')(
 const NavLink = styled('a')(
   css({
     width: '100%',
-    fontSize: '1.8rem',
+    fontSize: 1,
     textDecoration: 'none',
     textTransform: 'uppercase',
     textAlign: 'center',

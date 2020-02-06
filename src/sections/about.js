@@ -52,7 +52,7 @@ const SocialLinkContainer = styled('a')(
     display: 'flex',
     justifyContent: 'center',
     alignItems: 'center',
-    fontSize: '2.4rem',
+    fontSize: 4,
     bg: 'button',
     color: 'background',
     borderRadius: '50%',
